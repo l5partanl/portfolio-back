@@ -2,10 +2,14 @@
 const http = require("node:http");
 const app = require("./src/app");
 
+//db
+const connectDB = require('./src/db/db');
+
 // Config .env
 require("dotenv").config();
 
 // Server creation
+connectDB().then(() => {
 const server = http.createServer(app);
 
 const PORT = process.env.PORT || 3000;
@@ -18,4 +22,5 @@ server.on("listening", () => {
 
 server.on("error", (error) => {
     console.log(error);
+});
 });

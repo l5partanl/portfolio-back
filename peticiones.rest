@@ -1,0 +1,43 @@
+@host = http://localhost
+@port = 3000
+@baseUrl = {{host}}:{{port}}/api
+
+### 🟢 GET fullstack projects
+GET {{baseUrl}}/projects/fullstack
+Content-Type: application/json
+
+###
+
+### 🟢 GET design projects
+GET {{baseUrl}}/projects/design
+Content-Type: application/json
+
+###
+
+### 🟡 POST new fullstack project
+POST {{baseUrl}}/projects
+Content-Type: application/json
+
+{
+  "title": "Sample Fullstack Project",
+  "description": "This is a fullstack project loaded via REST client.",
+  "tags": ["Angular", "Node.js", "MongoDB"],
+  "imageUrl": "https://via.placeholder.com/400x200?text=REST+Client+Test",
+  "liveLink": "https://example.com/project",
+  "github": "https://github.com/youruser/project",
+  "type": "fullstack"
+}
+
+###
+
+### 🟡 POST new design project
+POST {{baseUrl}}/projects
+Content-Type: application/json
+
+{
+  "title": "Lighting Fixture Design",
+  "description": "Product design example sent via REST client.",
+  "tags": ["SolidWorks", "Blender", "Rendering"],
+  "imageUrl": "https://via.placeholder.com/400x200?text=Design+Test",
+  "type": "design"
+}
