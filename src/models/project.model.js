@@ -7,7 +7,7 @@ const projectSchema = new mongoose.Schema({
   imageUrl: String,
   liveLink: String,
   github: String,
-  type: String // 'fullstack' o 'design'
+  type: String // 'fullstack' 'design' 'about'
 });
 
 module.exports = mongoose.model('Project', projectSchema);

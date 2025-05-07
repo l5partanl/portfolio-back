@@ -1,15 +1,15 @@
 const Project = require('../models/project.model');
 
-// GET /api/projects/fullstack
-exports.getFullstackProjects = async (req, res) => {
-  const projects = await Project.find({ type: 'fullstack' });
-  res.json(projects);
-};
-
-// GET /api/projects/design
-exports.getDesignProjects = async (req, res) => {
-  const projects = await Project.find({ type: 'design' });
-  res.json(projects);
+// GET /api/projects/:type
+exports.getProjectsByType = async (req, res) => {
+  const { type } = req.params;
+  try {
+    const projects = await Project.find({ type });
+    res.json(projects);
+  } catch (error) {
+    console.error("Error fetching projects:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
 };
 
 // POST /api/projects

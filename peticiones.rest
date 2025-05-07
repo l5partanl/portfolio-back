@@ -14,6 +14,12 @@ Content-Type: application/json
 
 ###
 
+### 🟢 GET about
+GET {{baseUrl}}/projects/about  
+Content-Type: application/json
+
+###
+
 ### 🟡 POST new fullstack project
 POST {{baseUrl}}/projects
 Content-Type: application/json
@@ -41,3 +47,78 @@ Content-Type: application/json
   "imageUrl": "https://via.placeholder.com/400x200?text=Design+Test",
   "type": "design"
 }
+
+###
+
+### 🟡 POST about
+POST {{baseUrl}}/projects  
+Content-Type: application/json
+
+{
+  "title": "About Gian Caorlin",
+  "description": "I’m a full-stack developer and industrial designer with over a decade of experience in 3D modeling, technical drawing, and digital visualization. I love building tools and interfaces that feel both smart and honest. My approach blends precision, curiosity, and a strong bias toward practical solutions. Currently based in Denmark.",
+  "tags": ["Resilience", "Curiosity", "Design Thinking", "Web Development", "3D Modeling", "Empathy"],
+  "imageUrl": "https://kalaediciones.wordpress.com/wp-content/uploads/2020/06/giancaorlin-1.jpg?w=525",
+  "liveLink": "https://www.linkedin.com/in/giancaorlin",
+  "github": "https://github.com/gcaorlin",
+  "type": "about"
+}
+
+###
+
+### 🟡 POST art
+POST {{baseUrl}}/projects
+Content-Type: application/json
+
+{
+  "title": "Digital Work",
+  "description": "Personal project - 2018",
+  "imageUrl": "https://static.wixstatic.com/media/f6a3ed_b72c88a8d0654a639fc681d468554cae~mv2_d_1200_1460_s_2.jpg/v1/fill/w_625,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f6a3ed_b72c88a8d0654a639fc681d468554cae~mv2_d_1200_1460_s_2.jpg",
+  "type": "art"
+}
+
+###
+
+art: 
+https://static.wixstatic.com/media/f6a3ed_8b1a52aaadf54770b3e53c994b14b859~mv2_d_1747_2362_s_2.jpg/v1/fill/w_562,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f6a3ed_8b1a52aaadf54770b3e53c994b14b859~mv2_d_1747_2362_s_2.jpg
+
+https://static.wixstatic.com/media/f6a3ed_0506d5fd7eb941d3861348f439d458a2~mv2_d_1500_1500_s_2.jpg/v1/fill/w_760,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f6a3ed_0506d5fd7eb941d3861348f439d458a2~mv2_d_1500_1500_s_2.jpg
+
+https://static.wixstatic.com/media/f6a3ed_27cd0f89a9da4ef897b5e2c41087d748~mv2_d_2282_2853_s_2.jpg/v1/fill/w_608,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f6a3ed_27cd0f89a9da4ef897b5e2c41087d748~mv2_d_2282_2853_s_2.jpg
+
+
+
+### 🟡 POST graphic
+POST {{baseUrl}}/projects
+Content-Type: application/json
+
+{
+  "title": "Graphic design",
+  "description": "Logo for the Congreso Joven - 2016",
+  "imageUrl": "https://static.wixstatic.com/media/f6a3ed_8c884e787d9845c88603bb4f4d5bb690~mv2_d_7149_5828_s_4_2.jpg/v1/fill/w_932,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f6a3ed_8c884e787d9845c88603bb4f4d5bb690~mv2_d_7149_5828_s_4_2.jpg",
+  "type": "graphic"
+}
+
+###
+
+
+
+
+book art:
+tapa-
+https://static.wixstatic.com/media/f6a3ed_1f4333f4b99f42948397998b15b9bdcb~mv2_d_1200_1697_s_2.png/v1/fill/w_537,h_760,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/f6a3ed_1f4333f4b99f42948397998b15b9bdcb~mv2_d_1200_1697_s_2.png
+
+arte-
+https://static.wixstatic.com/media/f6a3ed_c266713cd39349f6b63a786640b7c447~mv2.png/v1/fill/w_537,h_760,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/f6a3ed_c266713cd39349f6b63a786640b7c447~mv2.png
+
+https://static.wixstatic.com/media/f6a3ed_4c7ce622583a43dbbd362a53c3bdb6b2~mv2.png/v1/fill/w_537,h_760,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/f6a3ed_4c7ce622583a43dbbd362a53c3bdb6b2~mv2.png
+
+https://static.wixstatic.com/media/f6a3ed_38bb954b1dea498fb5b51498f665c525~mv2_d_1200_1697_s_2.png/v1/fill/w_537,h_760,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/f6a3ed_38bb954b1dea498fb5b51498f665c525~mv2_d_1200_1697_s_2.png
+
+
+videoclip/storyboard/tests:
+https://static.wixstatic.com/media/f6a3ed_989a1c707ea34356b0ecb58cd9b05a4f~mv2.jpg/v1/fill/w_1351,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f6a3ed_989a1c707ea34356b0ecb58cd9b05a4f~mv2.jpg
+
+
+diseño grafico:
+https://static.wixstatic.com/media/f6a3ed_8c884e787d9845c88603bb4f4d5bb690~mv2_d_7149_5828_s_4_2.jpg/v1/fill/w_932,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f6a3ed_8c884e787d9845c88603bb4f4d5bb690~mv2_d_7149_5828_s_4_2.jpg
