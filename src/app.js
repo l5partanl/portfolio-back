@@ -4,7 +4,11 @@ const cors = require("cors");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+// 👇 CORS para permitir el frontend en Firebase
+app.use(cors(
+/*     {  origin: "https://portfolio-faf73.web.app"} */
+));
 
 // Route configuration
 // Ex.
